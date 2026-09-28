@@ -6,7 +6,7 @@ public class Main {
         // Declare variables
         String partyChoice
         // Input section
-        output "Enter your party affiliation (D, R, or I): "
+        output "Are you a Democrat, Republican, or Independent: "
         input partyChoice
         // Conditional logic cascade
         if partyChoice == "D" || "Democrat" then
