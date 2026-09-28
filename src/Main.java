@@ -1,18 +1,40 @@
 import java.util.Scanner;
 public class Main {
+    /*
+    class PartyAffiliation
+    main()
+        // Declare variables
+        String partyChoice
+        // Input section
+        output "Enter your party affiliation (D, R, or I): "
+        input partyChoice
+        // Conditional logic cascade
+        if partyChoice == "D" || "Democrat" then
+            output "You get a Democratic Donkey."
+        else if partyChoice == "R" then
+            output "You get a Republican Elephant."
+
+        else if partyChoice == "I" then
+            output "You get an Independent Man."
+        else
+            output "You have Another Political Affiliation: " + partyChoice
+        end if
+        return
+    end class
+     */
     static void main() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Are you a Democrat, Republican, or Independent: ");
-        String input = scanner.nextLine();
+        String partyChoice = scanner.nextLine();
 
-        if (input.equalsIgnoreCase("D") || input.equalsIgnoreCase("Democrat")) {
+        if (partyChoice.equalsIgnoreCase("D") || partyChoice.equalsIgnoreCase("Democrat")) {
             System.out.println("You get a Democratic Donkey");
-        } else if (input.equalsIgnoreCase("R") || input.equalsIgnoreCase("Republican")) {
+        } else if (partyChoice.equalsIgnoreCase("R") || partyChoice.equalsIgnoreCase("Republican")) {
             System.out.println("You get a Republican Elephant");
-        } else if (input.equalsIgnoreCase("I") || input.equalsIgnoreCase("Independent")) {
-            System.out.println("You are an Independent person");
+        } else if (partyChoice.equalsIgnoreCase("I") || partyChoice.equalsIgnoreCase("Independent")) {
+            System.out.println("You are an Independent Person");
         } else {
-            System.out.println("You have another political affiliation: " + input);
+            System.out.println("You have Another Political Affiliation: " + partyChoice);
         }
 
     }
