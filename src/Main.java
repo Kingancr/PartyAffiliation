@@ -11,10 +11,10 @@ public class Main {
         // Conditional logic cascade
         if partyChoice == "D" || "Democrat" then
             output "You get a Democratic Donkey."
-        else if partyChoice == "R" then
+        else if partyChoice == "R" || "Republican" then
             output "You get a Republican Elephant."
 
-        else if partyChoice == "I" then
+        else if partyChoice == "I" || "Independent" then
             output "You get an Independent Man."
         else
             output "You have Another Political Affiliation: " + partyChoice
